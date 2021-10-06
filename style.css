@@ -1,0 +1,224 @@
+*
+{
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box ;
+  outline: none ;
+}
+
+body
+{
+  /* background: #8EC5FC ; */
+  /* background-color: #85FFBD; */
+  /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */ 
+  /* background-color: #8EC5FC ; */
+  /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%) ; */
+  display: flex ;
+  flex-wrap: wrap ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.heading
+{
+  /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  /* background-color: #8EC5FC ; */
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%) ;
+  width: 100vw ;
+  height: 5.5rem ;
+  color: #282936 ;
+  box-shadow: 0 10px 50px rgb( 248 , 247 , 247 ) ;
+}
+
+.heading h1
+{
+  line-height: 5.8rem ;
+  margin-left: 2rem ;
+  font-weight: 600 ;
+}
+
+.add:active
+{
+  transform: scale( 0.98 ) ;
+}
+
+.btn-div
+{
+  position: fixed ;
+  top: 7rem ;
+  right: 1rem ;
+  border: none ;
+  border-radius: 3px ;
+  padding: 0.5rem 1rem ;
+  cursor: pointer ;
+}
+
+button
+{
+  position: relative ;
+  /* display: inline-block ; */
+  cursor: pointer ;
+  outline: none ;
+  border: 0 ;
+  vertical-align: middle ;
+  text-decoration: none ;
+  background-color: transparent ;
+  padding: 0 ;
+  font-size: inherit ;
+  font-family: inherit ;
+  float: right ;
+  margin-right: 20px ;
+  /* margin-top: 10px ; */
+}
+
+button.learn-more
+{
+  width: 12rem ;
+  height: auto ;
+}
+
+button.learn-more .circle
+{
+  transition: all 0.45s cubic-bezier( 0.65 , 0 , 0.076 , 1 ) ;
+  position: relative ;
+  display: block ;
+  margin: 0 ;
+  width: 3rem ;
+  height: 3rem ;
+  background: #8EC5FC ;
+  border-radius: 1.5rem ;
+}
+
+button.learn-more .circle .icon
+{
+  transition: all 0.45s cubic-bezier( 0.65 , 0 , 0.076 , 1 ) ;
+  position: absolute ;
+  top: 0 ;
+  bottom: 0 ;
+  margin: auto ;
+  background: #fff ;
+}
+
+button.learn-more .circle .icon.arrow
+{
+  transition: all 0.45s cubic-bezier( 0.65 , 0 , 0.076 , 1 ) ;
+  left: 0.625rem ;
+  width: 1.125rem ;
+  height: 0.125rem ;
+  background: none ;
+}
+
+button.learn-more .circle .icon.arrow::before
+{
+  position: absolute ;
+  content: "" ;
+  top: -0.25rem ;
+  right: 0.0625rem ;
+  width: 0.625rem ;
+  height: 0.625rem ;
+  border-top: 0.125rem solid #282936 ;
+  border-right: 0.125rem solid #282936 ;
+  transform: rotate( 45deg ) ;
+}
+
+button.learn-more .button-text
+{
+  transition: all 0.45s cubic-bezier( 0.65 , 0 , 0.076 , 1 ) ;
+  position: absolute ;
+  top: 0 ;
+  left: 0 ;
+  bottom: 0 ;
+  right: 0 ;
+  padding: 0.75rem 0 ;
+  margin: 0 0 0 1.8rem ;
+  color: #282936 ;
+  font-weight: 600 ;
+  line-height: 1.6 ;
+  text-align: center ;
+  text-transform: uppercase ;
+}
+
+button:hover .circle
+{
+  width: 100% ;
+}
+
+button:hover .circle .icon.arrow
+{
+  background: #282936 ;
+  transform: translate( 1rem , 0 ) ;
+}
+
+/* button:hover .button-text
+{
+  color: #fff ;
+} */
+
+.note
+{
+  /* background-color: #8EC5FC ; */
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%) ;
+  margin: -50px 20px ;
+  height: 200px ;
+  width: 400px ;
+  overflow-y: scroll ;
+  margin-top: 7rem ;
+  box-shadow: inset 1px 1px 0 rgba( 0 , 0 , 0 , 0.1 ) , inset 0 -1px 0 rgba( 0 , 0 , 0 , 0.1 ) ;
+}
+
+/* .note .tools
+{
+  display: flex ;
+  justify-content: flex-end ;
+  padding: 0.5rem ;
+}
+
+.note .tools button
+{
+  background-color: transparent ;
+  border: none ;
+  color: #fff ;
+  cursor: pointer ;
+  font-size: 1rem ;
+  margin-left: 0.5rem ;
+} */
+
+.note textarea
+{
+  outline: none ;
+  font-family: inherit ;
+  font-size: 1.2rem ;
+  border: none ;
+  height: 150px ;
+  width: 100% ;
+  padding: 15px ;
+}
+
+.fa-pencil-alt , .fa-trash
+{
+  color: #282936 ;
+  padding: 7px ;
+  margin-top: 5px ;
+  /* background-color: #8EC5FC ; */
+  background-color: transparent ;
+  border-radius: 50% ;
+  transition: 0.3s ;
+}
+
+.fa-trash:hover , .fa-pencil-alt:hover
+{
+  background-color: #282936 ;
+  color: white ;
+  /* filter: drop-shadow( 0 10px 8px , rgb( 219 , 218 , 218 ) ) ; */
+}
+
+.main
+{
+  padding: 20px ;
+  margin-top: 20px ;
+  font-size: 1.1rem ;
+}
+
+.hidden
+{
+  display: none ;
+}
